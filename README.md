@@ -75,14 +75,14 @@ Erstelle im Projektordner einen Ordner `.vscode` und füge folgende `settings.js
 }
 ```
 ### 📦 Erweiterungsempfehlung (`.vscode/extensions.json`)
-
 Um sicherzustellen, dass alle notwendigen VS Code-Erweiterungen installiert sind, kannst du folgende Datei anlegen:
 
 ```json
 {
   "recommendations": [
-    "james-yu.latex-workshop",    // Für LaTeX-Kompilierung & PDF-Preview
-    "valentjn.vscode-ltex"        // Für Grammatik- und Rechtschreibprüfung in Deutsch
+    "james-yu.latex-workshop",
+    "tecosaur.latex-utilities",
+    "ltex-plus.vscode-ltex-plus"
   ]
 }
 ```
