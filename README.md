@@ -75,38 +75,6 @@ Neben inhaltlichen Angaben wie Titel, Name, Unternehmen usw. können hier auch g
 
 > Hinweis: Die Datei config.tex wird automatisch vom Hauptdokument eingebunden. Änderungen werden beim nächsten Kompilieren übernommen.
 
-## 🧠 Eigene Zitierbefehle: `\vglcite` und `\directcite`
-
-Dieses Template definiert zwei benutzerfreundliche LaTeX-Befehle für Fußnotenzitate nach dem deutschen Zitierstil (mit `biblatex`):
-
-### 🔹 `\vglcite`
-
-```latex
-\vglcite[Seitenzahl]{quellenkey}
-```
-
-Beispiel:
-
-```latex
-\vglcite[15\psq]{meier2025}
-```
-
-> Vgl. Meier et al. (2025, S. 15 f.).
-
-### 🔹 `\directcite`
-
-```latex
-\directcite[Seitenzahl]{quellenkey}
-```
-
-Beispiel:
-
-```latex
-\directcite[45]{schmidt2019}
-```
-
-> Schmidt (2025, S. 45).
-
 ### 📚 Literaturverzeichnis (`literatur.bib`)
 
 Alle Quellen werden in der Datei `literatur.bib` gepflegt und automatisch mit `biblatex` + `biber` eingebunden.  
