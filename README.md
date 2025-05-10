@@ -86,28 +86,20 @@ Dieses Template definiert zwei benutzerfreundliche LaTeX-Befehle für Fußnotenz
 ```latex
 \vglcite[Seitenzahl]{quellenkey}
 ```
-▶ Fügt eine Fußnote mit "Vgl." ein, z. B.:
 ```latex
 \vglcite[15\psq]{meier2025}
 ```
-🔎 Ausgabe im PDF:
 > Vgl. Meier et al. (2025, S. 15 f.).
-
-📌 Verwendung: Für indirekte Zitate (sinngemäße Wiedergaben).
 
 
 ### 🔹 \directcite
 ```latex
 \directcite[Seitenzahl]{quellenkey}
 ```
-▶ Fügt eine Fußnote ohne "Vgl." ein, z. B.:
 ```latex
 \directcite[45]{schmidt2019}
 ```
-🔎 Ausgabe im PDF:
 > Schmidt (2025, S. 45).
-
-📌 Verwendung: Für direkte Zitate (wortwörtliche Übernahmen).
 
 
 
