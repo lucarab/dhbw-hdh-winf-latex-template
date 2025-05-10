@@ -177,7 +177,6 @@ Erstelle im Projektordner einen Ordner `.vscode` und füge folgende `settings.js
 Mit der integrierten **SyncTeX**-Unterstützung kannst du ganz einfach zwischen Quelltext und PDF springen:
 - **Strg + Linksklick** im PDF → springt zur entsprechenden Zeile im `.tex`-Code
 - **Ctrl+Alt+J** im Code → öffnet die passende Stelle im PDF
-Diese Funktion ist mit **Visual Studio Code** und der Erweiterung [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) verfügbar. Sie ist standardmäßig aktiviert.
 
 ### 💡 Versionskontrolle & Sicherung
 Für Versionskontrolle, Zusammenarbeit und Sicherung wird die Nutzung von Git und GitHub empfohlen:
