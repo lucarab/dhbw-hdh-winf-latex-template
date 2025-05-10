@@ -29,9 +29,12 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 
 
 
-## Voraussetzungen
+## 📋 Voraussetzungen
 
-- LaTeX-Distribution (z. B. MiKTeX)
+- Eine LaTeX-Distribution (z. B. [MiKTeX](https://miktex.org/))
+  - MiKTeX lädt und installiert fehlende Pakete bei Bedarf automatisch
+- Ein Editor wie [Visual Studio Code](https://code.visualstudio.com/) mit den empfohlenen Erweiterungen
+- Optional: Git & GitHub für Versionskontrolle und Sicherung
 
 
 
@@ -62,7 +65,7 @@ Dieses Template definiert zwei benutzerfreundliche LaTeX-Befehle für Fußnotenz
 \directcite[45]{schmidt2019}
 ```
 🔎 Ausgabe im PDF:
-> Vgl. Schmidt (2025, S. 45).
+> Schmidt (2025, S. 45).
 
 📌 Verwendung: Für direkte Zitate (wortwörtliche Übernahmen).
 
