@@ -31,7 +31,7 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
   - Literaturverzeichnis mit `biblatex` und `biber`
 - Kompatibel und getestet mit:
   - [MiKTeX](https://miktex.org/)
-- 🔧 Bei Bedarf lassen sich einzelne Elemente durch Auskommentieren gezielt deaktivieren
+- Bei Bedarf lassen sich einzelne Elemente durch Auskommentieren gezielt deaktivieren
 
 
 ## 📋 Voraussetzungen
