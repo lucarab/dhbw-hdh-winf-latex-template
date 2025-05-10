@@ -1,5 +1,5 @@
 % Dokumentart auswählen: pa1, pa2, ba
-\newcommand{\dokumentart}{pa1}
+\newcommand{\dokumentart}{ba}
 
 % Deckblatt Konfiguration
 \newcommand{\projecttitle}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam} 
@@ -96,7 +96,7 @@
 \makeglossaries
 
 %Literaturverzeichnis & Zitation
-\usepackage[backend=biber,style=apa6,maxcitenames=2,language=german]{biblatex}
+\usepackage[backend=biber,style=apa,maxcitenames=2,language=german]{biblatex}
 \DeclareLanguageMapping{german}{german-apa}
 \usepackage{csquotes}
 \DefineBibliographyStrings{german}{%
@@ -105,9 +105,3 @@
 \usepackage{setspace}
 \setlength{\bibparsep}{\baselineskip}
 \addbibresource{literatur.bib}
-\newcommand{\vglcite}[2][]{%
-  \footnote{Vgl. \textcite[#1]{#2}.}%
-}
-\newcommand{\directcite}[2][]{%
-  \footnote{\textcite[#1]{#2}.}%
-}
