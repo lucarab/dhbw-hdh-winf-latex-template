@@ -48,7 +48,7 @@ Dieses Template definiert zwei benutzerfreundliche LaTeX-Befehle für Fußnotenz
 \vglcite[15\psq]{meier2025}
 ```
 🔎 Ausgabe im PDF:
-Vgl. Meier et al. (2025, S. 15 f.).
+> Vgl. Meier et al. (2025, S. 15 f.).
 📌 Verwendung: Für indirekte Zitate (sinngemäße Wiedergaben).
 
 
@@ -61,7 +61,7 @@ Vgl. Meier et al. (2025, S. 15 f.).
 \directcite[45]{schmidt2019}
 ```
 🔎 Ausgabe im PDF:
- Vgl. Schmidt (2025, S. 45).
+> Vgl. Schmidt (2025, S. 45).
 📌 Verwendung: Für direkte Zitate (wortwörtliche Übernahmen).
 
 
