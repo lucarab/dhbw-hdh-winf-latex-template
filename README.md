@@ -34,7 +34,7 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 - Eine LaTeX-Distribution (z. B. [MiKTeX](https://miktex.org/))  
   - MiKTeX lädt und installiert fehlende Pakete bei Bedarf automatisch
 - Ein Editor wie [Visual Studio Code](https://code.visualstudio.com/) mit den [empfohlenen Erweiterungen](#-visual-studio-code-setup)
-- Grundkenntnisse im Umgang mit LaTeX (z. B. Struktur, Kompilierung, Pakete)
+- Grundkenntnisse im Umgang mit LaTeX (z. B. Struktur, Kompilierung, Pakete, Ziterbefehle z.B. `footcites`)
 - Optional: Git & GitHub für Versionskontrolle und Sicherung
 
 ## 🔧 Konfiguration
