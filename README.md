@@ -99,6 +99,12 @@ Dieses Template definiert zwei benutzerfreundliche LaTeX-Befehle für Fußnotenz
 ```
 > Schmidt (2025, S. 45).
 
+### 📚 Literaturverzeichnis (literatur.bib)
+Alle Quellen werden in der Datei literatur.bib gepflegt und automatisch mit biblatex + biber eingebunden.
+Jede Quelle benötigt einen eindeutigen @Key, der in den Zitierbefehlen verwendet wird.
+
+>Tipp: Verwende ein Literaturverwaltungsprogramm wie [Zotero](https://www.zotero.org/), um deine Quellen bequem zu verwalten und als .bib-Datei zu exportieren.
+
 
 
 ## ⚙️ Visual Studio Code Setup
