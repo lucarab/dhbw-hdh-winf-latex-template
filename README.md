@@ -3,6 +3,8 @@
 Dieses Repository enthält eine LaTeX-Vorlage für wissenschaftliche Arbeiten im Studiengang **Wirtschaftsinformatik** an der **DHBW Heidenheim**.  
 Die Vorlage orientiert sich an den formalen Anforderungen der Hochschule und ist geeignet für Projektarbeiten, Bachelorarbeiten oder Seminararbeiten.
 
+
+
 ## 📚 Formatierung nach DHBW-Vorgaben
 
 Dieses LaTeX-Template basiert auf den offiziellen Vorgaben der DHBW Heidenheim für den Studiengang Wirtschaftsinformatik.  
@@ -12,6 +14,8 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 [Richtlinien zur Erstellung von Projektarbeiten (Stand Juni 2024)](https://www.heidenheim.dhbw.de/fileadmin/Heidenheim/Studienangebot/Bachelor_Wirtschaft/Wirtschaftsinformatik/Informationen_fuer_Studierende/Jg._2023/Richtlinien_zur_Erstellung_von_Projektarbeiten_ab_Jg._2018_Stand_Juni_2024_Wirtschaftsinformatik.pdf)
 
 > Bitte beachte: Die Hochschule kann ihre Anforderungen gelegentlich aktualisieren. Prüfe daher regelmäßig die offizielle Website der DHBW Heidenheim für die aktuellsten Versionen.
+
+
 
 ## Features
 
@@ -23,9 +27,13 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
   - Literaturverzeichnis mit `biblatex` + `biber`
 - Getestet mit MikTeX & TeX Live
 
+
+
 ## Voraussetzungen
 
 - LaTeX-Distribution (z. B. MiKTeX)
+
+
 
 ## 🧠 Eigene Zitierbefehle: `\vglcite` und `\directcite`
 
@@ -55,6 +63,8 @@ Vgl. Meier et al. (2025, S. 15 f.).
 🔎 Ausgabe im PDF:
  Vgl. Schmidt (2025, S. 45).
 📌 Verwendung: Für direkte Zitate (wortwörtliche Übernahmen).
+
+
 
 ## ⚙️ Visual Studio Code Setup
 
