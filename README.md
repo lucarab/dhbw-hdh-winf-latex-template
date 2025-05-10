@@ -17,20 +17,26 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 
 
 
-## Features
+## ✨ Features
 
-- Formatierung nach DHBW-Vorgaben
+- Formatierung gemäß den offiziellen **DHBW-Vorgaben**
 - Unterstützung für:
-  - Deckblatt mit Firmenlogo
+  - Deckblatt mit Firmen- und DHBW-Logo
+  - Inhaltsverzeichnis
+  - Vorwort
+  - Abbildungsverzeichnis, Tabellenverzeichnis
   - Sperrvermerk
-  - Abkürzungsverzeichnis & Glossar
-  - Literaturverzeichnis mit `biblatex` + `biber`
-- Getestet mit MikTeX & TeX Live
-
+  - Ehrenwörtliche Erklärung
+  - Abkürzungsverzeichnis & Glossar (via `glossaries`)
+  - Literaturverzeichnis mit `biblatex` und `biber`
+- Kompatibel und getestet mit:
+  - [MiKTeX](https://miktex.org/)
+- 🔧 Bei Bedarf lassen sich einzelne Elemente durch Auskommentieren gezielt deaktivieren
 
 
 ## 📋 Voraussetzungen
 
+- Grundkenntnisse im Umgang mit LaTeX (z. B. Struktur, Kompilierung, Pakete)
 - Eine LaTeX-Distribution (z. B. [MiKTeX](https://miktex.org/))
   - MiKTeX lädt und installiert fehlende Pakete bei Bedarf automatisch
 - Ein Editor wie [Visual Studio Code](https://code.visualstudio.com/) mit den empfohlenen Erweiterungen
