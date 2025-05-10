@@ -19,9 +19,20 @@ Die Vorlage orientiert sich an den formalen Anforderungen der Hochschule und ist
 
 ## ⚙️ Visual Studio Code Setup
 
-Für die komfortable Bearbeitung mit **Visual Studio Code** wird die Verwendung der Erweiterung [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) empfohlen.
+### 📦 Erweiterungsempfehlung (`.vscode/extensions.json`)
+Um sicherzustellen, dass alle notwendigen VS Code-Erweiterungen installiert sind, kannst du folgende Datei anlegen:
 
-### `.vscode/settings.json`
+```json
+{
+  "recommendations": [
+    "james-yu.latex-workshop",
+    "tecosaur.latex-utilities",
+    "ltex-plus.vscode-ltex-plus"
+  ]
+}
+```
+
+### 🧩 Build-Rezepte und LaTeX-Konfiguration in VS Code `.vscode/settings.json`
 
 Erstelle im Projektordner einen Ordner `.vscode` und füge folgende `settings.json`-Datei hinzu:
 
@@ -72,17 +83,5 @@ Erstelle im Projektordner einen Ordner `.vscode` und füge folgende `settings.js
             ]
         }
     ]
-}
-```
-### 📦 Erweiterungsempfehlung (`.vscode/extensions.json`)
-Um sicherzustellen, dass alle notwendigen VS Code-Erweiterungen installiert sind, kannst du folgende Datei anlegen:
-
-```json
-{
-  "recommendations": [
-    "james-yu.latex-workshop",
-    "tecosaur.latex-utilities",
-    "ltex-plus.vscode-ltex-plus"
-  ]
 }
 ```
