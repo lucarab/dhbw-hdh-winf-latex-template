@@ -105,12 +105,6 @@ Dieses Template definiert zwei benutzerfreundliche LaTeX-Befehle für Fußnotenz
 
 ## ⚙️ Visual Studio Code Setup
 
-### 💡 Versionskontrolle & Sicherung
-Für Versionskontrolle, Zusammenarbeit und Sicherung wird die Nutzung von Git und GitHub empfohlen:
-- Änderungen lassen sich nachvollziehen und bei Bedarf zurücksetzen
-- Sicherung durch Remote-Repository (z. B. auf GitHub) vor Datenverlust.
-- Ideal für Teamarbeit oder Studienprojekte
-
 ### 📦 Erweiterungsempfehlung (`.vscode/extensions.json`)
 Um sicherzustellen, dass alle notwendigen VS Code-Erweiterungen installiert sind, kannst du folgende Datei anlegen:
 
@@ -177,3 +171,9 @@ Erstelle im Projektordner einen Ordner `.vscode` und füge folgende `settings.js
     ]
 }
 ```
+
+### 💡 Versionskontrolle & Sicherung
+Für Versionskontrolle, Zusammenarbeit und Sicherung wird die Nutzung von Git und GitHub empfohlen:
+- Änderungen lassen sich nachvollziehen und bei Bedarf zurücksetzen
+- Sicherung durch Remote-Repository (z. B. auf GitHub) vor Datenverlust.
+- Ideal für Teamarbeit oder Studienprojekte
