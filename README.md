@@ -1,8 +1,9 @@
-# DHBW Heidenheim – LaTeX Thesis Template (Wirtschaftsinformatik)
+
+# 🎓 DHBW Heidenheim – LaTeX Thesis Template (Wirtschaftsinformatik)
 
 Dieses Repository enthält eine LaTeX-Vorlage für wissenschaftliche Arbeiten im Studiengang **Wirtschaftsinformatik** an der **DHBW Heidenheim**. Die Vorlage orientiert sich an den formalen Anforderungen der Hochschule und ist geeignet für Projektarbeiten, Bachelorarbeiten oder Seminararbeiten.
 
-
+---
 
 ## 📚 Formatierung nach DHBW-Vorgaben
 
@@ -13,6 +14,8 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 [Richtlinien zur Erstellung von Projektarbeiten (Stand Juni 2024)](https://www.heidenheim.dhbw.de/fileadmin/Heidenheim/Studienangebot/Bachelor_Wirtschaft/Wirtschaftsinformatik/Informationen_fuer_Studierende/Jg._2023/Richtlinien_zur_Erstellung_von_Projektarbeiten_ab_Jg._2018_Stand_Juni_2024_Wirtschaftsinformatik.pdf)
 
 > Bitte beachte: Die Hochschule kann ihre Anforderungen gelegentlich aktualisieren. Prüfe daher regelmäßig die offizielle Website der DHBW Heidenheim für die aktuellsten Versionen.
+
+---
 
 ## ✨ Features
 
@@ -30,14 +33,17 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
   - [MiKTeX](https://miktex.org/)
 - Bei Bedarf lassen sich einzelne Elemente durch Auskommentieren gezielt deaktivieren
 
+---
 
 ## 📋 Voraussetzungen
 
-- Eine LaTeX-Distribution (z. B. [MiKTeX](https://miktex.org/))
+- Eine LaTeX-Distribution (z. B. [MiKTeX](https://miktex.org/))  
   - MiKTeX lädt und installiert fehlende Pakete bei Bedarf automatisch
-- Ein Editor wie [Visual Studio Code](https://code.visualstudio.com/) mit den [empfohlenen Erweiterungen](https://github.com/lucarab/dhbw-hdh-winf-latex-template/blob/main/README.md#-erweiterungsempfehlung-vscodeextensionsjson)
+- Ein Editor wie [Visual Studio Code](https://code.visualstudio.com/) mit den [empfohlenen Erweiterungen](#-visual-studio-code-setup)
 - Grundkenntnisse im Umgang mit LaTeX (z. B. Struktur, Kompilierung, Pakete)
 - Optional: Git & GitHub für Versionskontrolle und Sicherung
+
+---
 
 ## 🔧 Konfiguration
 
@@ -73,43 +79,59 @@ Die wichtigsten Einstellungen für Titelblatt, Dokumentart und weitere Metadaten
 % Ehrenwörtliche Erklärung (optional)
 \newcommand{\wordcount}{4217}
 ```
+
 > Hinweis: Die Datei config.tex wird automatisch vom Hauptdokument eingebunden. Änderungen werden beim nächsten Kompilieren übernommen.
+
+---
 
 ## 🧠 Eigene Zitierbefehle: `\vglcite` und `\directcite`
 
 Dieses Template definiert zwei benutzerfreundliche LaTeX-Befehle für Fußnotenzitate nach dem deutschen Zitierstil (mit `biblatex`):
 
 ### 🔹 `\vglcite`
+
 ```latex
 \vglcite[Seitenzahl]{quellenkey}
 ```
+
+Beispiel:
+
 ```latex
 \vglcite[15\psq]{meier2025}
 ```
+
 > Vgl. Meier et al. (2025, S. 15 f.).
 
+---
 
-### 🔹 \directcite
+### 🔹 `\directcite`
+
 ```latex
 \directcite[Seitenzahl]{quellenkey}
 ```
+
+Beispiel:
+
 ```latex
 \directcite[45]{schmidt2019}
 ```
+
 > Schmidt (2025, S. 45).
 
+---
+
 ### 📚 Literaturverzeichnis (`literatur.bib`)
-Alle Quellen werden in der Datei literatur.bib gepflegt und automatisch mit biblatex + biber eingebunden.
-Jede Quelle benötigt einen eindeutigen @Key, der in den Zitierbefehlen verwendet wird.
 
->Tipp: Verwende ein Literaturverwaltungsprogramm wie [Zotero](https://www.zotero.org/), um deine Quellen bequem zu verwalten und als .bib-Datei zu exportieren.
+Alle Quellen werden in der Datei `literatur.bib` gepflegt und automatisch mit `biblatex` + `biber` eingebunden.  
+Jede Quelle benötigt einen eindeutigen `@Key`, der in den Zitierbefehlen verwendet wird.
 
+> Tipp: Verwende ein Literaturverwaltungsprogramm wie [Zotero](https://www.zotero.org/), um deine Quellen bequem zu verwalten und als `.bib`-Datei zu exportieren.
 
+---
 
 ## ⚙️ Visual Studio Code Setup
 
 ### 📦 Erweiterungsempfehlung (`.vscode/extensions.json`)
-Um sicherzustellen, dass alle notwendigen VS Code-Erweiterungen installiert sind, kannst du folgende Datei anlegen:
 
 ```json
 {
@@ -121,70 +143,73 @@ Um sicherzustellen, dass alle notwendigen VS Code-Erweiterungen installiert sind
 }
 ```
 
-### 🧩 Build-Rezept und LaTeX-Konfiguration (`.vscode/settings.json`)
+---
 
-Erstelle im Projektordner einen Ordner `.vscode` und füge folgende `settings.json`-Datei hinzu:
+### 🧩 Build-Rezept und LaTeX-Konfiguration (`.vscode/settings.json`)
 
 ```json
 {
-    "ltex.language": "de",
-    "latex-workshop.latex.outDir": "./OUTPUT",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.synctex.afterBuild.enabled": true,
-    "latex-workshop.latex.recipe.default": "xelatex -> biber -> makeglossaries -> xelatex",
-    "latex-workshop.latex.recipes": [
-        {
-            "name": "xelatex -> biber -> makeglossaries -> xelatex",
-            "tools": [
-                "xelatex",
-                "biber",
-                "makeglossaries",
-                "xelatex",
-                "xelatex"
-            ]
-        }
-    ],
-    "latex-workshop.latex.tools": [
-        {
-            "name": "xelatex",
-            "command": "xelatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-output-directory=./OUTPUT",
-                "%DOC%"
-            ]
-        },
-        {
-            "name": "biber",
-            "command": "biber",
-            "args": [
-                "--input-directory=./OUTPUT",
-                "%DOCFILE%"
-            ]
-        },
-        {
-            "name": "makeglossaries",
-            "command": "makeglossaries",
-            "args": [
-                "-d",
-                "./OUTPUT",
-                "%DOCFILE%"
-            ]
-        }
-    ]
+  "ltex.language": "de",
+  "latex-workshop.latex.outDir": "./OUTPUT",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.latex.recipe.default": "xelatex -> biber -> makeglossaries -> xelatex",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "xelatex -> biber -> makeglossaries -> xelatex",
+      "tools": [
+        "xelatex",
+        "biber",
+        "makeglossaries",
+        "xelatex",
+        "xelatex"
+      ]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-output-directory=./OUTPUT",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": [
+        "--input-directory=./OUTPUT",
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "makeglossaries",
+      "command": "makeglossaries",
+      "args": [
+        "-d",
+        "./OUTPUT",
+        "%DOCFILE%"
+      ]
+    }
+  ]
 }
 ```
 
+---
+
 ### 🧭 Quelltext–PDF-Synchronisation (SyncTeX)
 
-Mit der integrierten **SyncTeX**-Unterstützung kannst du ganz einfach zwischen Quelltext und PDF springen:
-- **Strg + Linksklick** im PDF → springt zur entsprechenden Zeile im `.tex`-Code
-- **Ctrl+Alt+J** im Code → öffnet die passende Stelle im PDF
+- **Strg + Linksklick** im PDF → springt zur entsprechenden Zeile im `.tex`-Code  
+- **Ctrl + Alt + J** im Code → öffnet die passende Stelle im PDF
+
+---
 
 ### 💡 Versionskontrolle & Sicherung
-Für Versionskontrolle, Zusammenarbeit und Sicherung wird die Nutzung von Git und GitHub empfohlen:
-- Änderungen lassen sich nachvollziehen und bei Bedarf zurücksetzen
-- Sicherung durch Remote-Repository (z. B. auf GitHub) vor Datenverlust.
-- Ideal für Teamarbeit oder Studienprojekte
+
+- Git und GitHub ermöglichen Nachverfolgung, Sicherung und Zusammenarbeit
+- Remote-Repositories schützen vor Datenverlust
+- Ideal für Teamarbeit und Studienprojekte
