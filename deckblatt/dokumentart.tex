@@ -1,0 +1,14 @@
+% Select correct cover page based on the document type
+\IfStrEq{\dokumentart}{pa1}{
+  \input{./deckblatt/deckblatt_pa1.tex}
+}{
+  \IfStrEq{\dokumentart}{pa2}{
+    \input{./deckblatt/deckblatt_pa2.tex}
+  }{
+    \IfStrEq{\dokumentart}{ba}{
+      \input{./deckblatt/deckblatt_ba.tex}
+    }{
+      \PackageError{dokumentart}{Ungültiger Wert für \noexpand\dokumentart}{Verwende pa1, pa2 oder ba in config.tex}
+    }
+  }
+}

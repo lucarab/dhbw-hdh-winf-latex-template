@@ -1,0 +1,113 @@
+% Dokumentart auswählen: pa1, pa2, ba
+\newcommand{\dokumentart}{pa1}
+
+% Deckblatt Konfiguration
+\newcommand{\projecttitle}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam} 
+
+\newcommand{\degreeprogram}{Studiengang Wirtschaftsinformatik}
+\newcommand{\faculty}{in der Fakultät Wirtschaft}
+\newcommand{\university}{an der Duale Hochschule Baden-Württemberg}
+\newcommand{\universitycity}{Standort Heidenheim}
+
+\newcommand{\studentname}{Max Mustermann}
+\newcommand{\studentaddress}{Musterstraße 1}
+\newcommand{\studentcity}{99999 Musterstadt}
+
+\newcommand{\companyname}{Beispiel GmbH}
+\newcommand{\companyaddress}{Musterstraße 1}
+\newcommand{\companycity}{99999 Musterstadt}
+
+\newcommand{\semester}{2. Semester}
+\newcommand{\submissiondate}{01.01.25}
+\newcommand{\tutorcompany}{Max Mustermann}
+\newcommand{\tutoruniversity}{Erika Müller}
+
+% Relevant für die Bachelorarbeit
+\newcommand{\degree}{Bachelor of Science}
+
+% Ehrenwörtliche Erklärung
+\newcommand{\wordcount}{4217}
+
+
+% Zeichencodierung und Sprache
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{microtype}
+
+% Schriftart: Times oder Arial
+\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+% Wenn du Arial bevorzugst:
+\setmainfont{Arial}
+
+% Seitenlayout
+\usepackage[a4paper, left=3cm, right=3cm, top=2cm, bottom=2cm]{geometry}
+
+% Absatz und Zeilenabstand
+\usepackage{setspace}
+\onehalfspacing         % 1,5-zeiliger Abstand
+\setlength{\parskip}{6pt}   % 6pt Abstand zwischen Absätzen
+\setlength{\parindent}{0pt} % Kein Einzug
+\setlength{\skip\footins}{20pt}
+\usepackage[
+  bottom,          
+  hang,           
+  stable         
+]{footmisc}
+\setlength{\footnotemargin}{0.5cm}
+\setlength{\footnotesep}{0.4cm}
+
+\usepackage[none]{hyphenat}
+\setlength{\emergencystretch}{\maxdimen}
+
+% Blocksatz
+\usepackage{ragged2e}
+\justifying
+
+% Fußnoten: kleiner und einzeilig
+\usepackage{footmisc}
+\renewcommand{\footnotesize}{\fontsize{10pt}{12pt}\selectfont} % 2pt kleiner als 12pt
+
+% Nummerierung römisch für Verzeichnisse, arabisch für Textteil
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+
+% Literaturverzeichnis sichtbar im Inhaltsverzeichnis
+\usepackage[nottoc]{tocbibind}
+
+% Hyperlinks
+\usepackage[hidelinks]{hyperref}
+
+% Bilder und Tabellen
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+% Deckblatt
+\usepackage{xstring}
+\usepackage{tabularx}
+
+%Glossar
+\usepackage[nonumberlist,acronym,toc]{glossaries}
+\makeglossaries
+
+%Literaturverzeichnis & Zitation
+\usepackage[backend=biber,style=apa6,maxcitenames=2,language=german]{biblatex}
+\DeclareLanguageMapping{german}{german-apa}
+\usepackage{csquotes}
+\DefineBibliographyStrings{german}{%
+  andothers = {et al.},
+}
+\usepackage{setspace}
+\setlength{\bibparsep}{\baselineskip}
+\addbibresource{literatur.bib}
+\newcommand{\vglcite}[2][]{%
+  \footnote{Vgl. \textcite[#1]{#2}.}%
+}
+\newcommand{\directcite}[2][]{%
+  \footnote{\textcite[#1]{#2}.}%
+}

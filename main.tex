@@ -1,0 +1,51 @@
+\documentclass[12pt,a4paper]{article}
+\input{./config.tex}
+
+\begin{document}
+\pagenumbering{Roman}
+
+% Hier wird das Deckblatt eingebunden
+\input{./deckblatt/dokumentart.tex}
+
+% Inhaltsverzeichnis
+\newpage
+\setcounter{page}{1}
+\tableofcontents
+
+% Vorwort
+\newpage
+\input{./vorwort/vorwort.tex}
+
+% Glossar und Abkürzungsverzeichnis
+\newpage
+\printglossary[title=Glossar]
+\printglossary[type=acronym,title=Abkürzungsverzeichnis]
+
+% Abbildverzeichnis
+\newpage
+\listoffigures
+
+% Tabellenverzeichnis
+\newpage
+\listoftables
+
+% Beginn des Textteils mit arabischer Nummerierung
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{./inhalt/1_einleitung.tex}
+\input{./inhalt/2_erstes_kapitel.tex}
+
+% Sperrvermerk und Ehrenwörtliche Erklärung
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{6}
+
+\renewcommand{\refname}{Literaturverzeichnis}
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+\printbibliography
+
+\input{./ehrenw-erklaerung/erklaerung.tex}
+\input{./sperrvermerk/sperrvermerk.tex}
+
+\end{document}
