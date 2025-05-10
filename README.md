@@ -124,6 +124,8 @@ Erstelle im Projektordner einen Ordner `.vscode` und füge folgende `settings.js
 {
     "ltex.language": "de",
     "latex-workshop.latex.outDir": "./OUTPUT",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.synctex.afterBuild.enabled": true,
     "latex-workshop.latex.recipe.default": "xelatex -> biber -> makeglossaries -> xelatex",
     "latex-workshop.latex.recipes": [
         {
