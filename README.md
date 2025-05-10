@@ -1,5 +1,5 @@
 
-# 🎓 DHBW Heidenheim – LaTeX Thesis Template (Wirtschaftsinformatik)
+# 🎓 DHBW Heidenheim – LaTeX Template (Wirtschaftsinformatik)
 
 Dieses Repository enthält eine LaTeX-Vorlage für wissenschaftliche Arbeiten im Studiengang **Wirtschaftsinformatik** an der **DHBW Heidenheim**. Die Vorlage orientiert sich an den formalen Anforderungen der Hochschule und ist geeignet für Projektarbeiten, Bachelorarbeiten oder Seminararbeiten.
 
