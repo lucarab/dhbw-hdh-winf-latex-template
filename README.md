@@ -36,10 +36,12 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 
 ## 📋 Voraussetzungen
 
-- Grundkenntnisse im Umgang mit LaTeX (z. B. Struktur, Kompilierung, Pakete)
+## 📋 Voraussetzungen
+
 - Eine LaTeX-Distribution (z. B. [MiKTeX](https://miktex.org/))
   - MiKTeX lädt und installiert fehlende Pakete bei Bedarf automatisch
-- Ein Editor wie [Visual Studio Code](https://code.visualstudio.com/) mit den empfohlenen Erweiterungen
+- Ein Editor wie [Visual Studio Code](https://code.visualstudio.com/) mit den [empfohlenen Erweiterungen](https://github.com/lucarab/dhbw-hdh-winf-latex-template/blob/main/README.md#-erweiterungsempfehlung-vscodeextensionsjson)
+- Grundkenntnisse im Umgang mit LaTeX (z. B. Struktur, Kompilierung, Pakete)
 - Optional: Git & GitHub für Versionskontrolle und Sicherung
 
 ## 🔧 Konfiguration
