@@ -15,8 +15,6 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 
 > Bitte beachte: Die Hochschule kann ihre Anforderungen gelegentlich aktualisieren. Prüfe daher regelmäßig die offizielle Website der DHBW Heidenheim für die aktuellsten Versionen.
 
-
-
 ## ✨ Features
 
 - Formatierung gemäß den offiziellen **DHBW-Vorgaben**
@@ -33,8 +31,6 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
   - [MiKTeX](https://miktex.org/)
 - Bei Bedarf lassen sich einzelne Elemente durch Auskommentieren gezielt deaktivieren
 
-
-## 📋 Voraussetzungen
 
 ## 📋 Voraussetzungen
 
