@@ -42,7 +42,41 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 - Ein Editor wie [Visual Studio Code](https://code.visualstudio.com/) mit den empfohlenen Erweiterungen
 - Optional: Git & GitHub für Versionskontrolle und Sicherung
 
+## 🔧 Konfiguration
 
+Die wichtigsten Einstellungen für Titelblatt, Dokumentart und weitere Metadaten werden zentral in der Datei `config.tex` vorgenommen:
+
+```latex
+% Dokumentart auswählen: pa1, pa2, ba
+\newcommand{\dokumentart}{pa1}
+
+% Titelblatt-Konfiguration
+\newcommand{\projecttitle}{Lorem ipsum dolor sit amet, ...}
+\newcommand{\degreeprogram}{Studiengang Wirtschaftsinformatik}
+\newcommand{\faculty}{in der Fakultät Wirtschaft}
+\newcommand{\university}{an der Duale Hochschule Baden-Württemberg}
+\newcommand{\universitycity}{Standort Heidenheim}
+
+\newcommand{\studentname}{Max Mustermann}
+\newcommand{\studentaddress}{Musterstraße 1}
+\newcommand{\studentcity}{99999 Musterstadt}
+
+\newcommand{\companyname}{Beispiel GmbH}
+\newcommand{\companyaddress}{Musterstraße 1}
+\newcommand{\companycity}{99999 Musterstadt}
+
+\newcommand{\semester}{2. Semester}
+\newcommand{\submissiondate}{01.01.25}
+\newcommand{\tutorcompany}{Max Mustermann}
+\newcommand{\tutoruniversity}{Erika Müller}
+
+% Relevant für die Bachelorarbeit
+\newcommand{\degree}{Bachelor of Science}
+
+% Ehrenwörtliche Erklärung (optional)
+\newcommand{\wordcount}{4217}
+```
+> Hinweis: Die Datei config.tex wird automatisch vom Hauptdokument eingebunden. Änderungen werden beim nächsten Kompilieren übernommen.
 
 ## 🧠 Eigene Zitierbefehle: `\vglcite` und `\directcite`
 
