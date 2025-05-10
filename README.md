@@ -39,7 +39,8 @@ Alle wichtigen Formatierungsrichtlinien wie Seitenränder, Schriftgrößen, Glie
 
 ## 🔧 Konfiguration
 
-Die wichtigsten Einstellungen für Titelblatt, Dokumentart und weitere Metadaten werden zentral in der Datei `config.tex` vorgenommen:
+Die wichtigsten Einstellungen für Titelblatt, Dokumentart und weitere Metadaten werden zentral in der Datei `config.tex` vorgenommen. 
+Neben inhaltlichen Angaben wie Titel, Name, Unternehmen usw. können hier auch grundlegende Formatierungen wie Schriftart, Zeilenabstand, Schriftgröße oder Ränder angepasst werden.
 
 ```latex
 % Dokumentart auswählen: pa1, pa2, ba
